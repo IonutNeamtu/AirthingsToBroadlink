@@ -54,7 +54,7 @@ def process_sensor_data(data):
     suggestions = []
 
     if temperature is not None and humidity is not None:
-        if temperature > 25:
+        if temperature > 28:
             print("Temperatura este ridicata.")
             suggestions.append("Temperatura este ridicata.")
         if 1000 > co2 > 800:
@@ -75,5 +75,4 @@ def process_sensor_data(data):
         if voc > 250:
             print("Nivel voc ridicat")
             suggestions.append("Nivel voc ridicat")
-
     return suggestions
